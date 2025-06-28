@@ -1,10 +1,5 @@
 # Claude Deep Research Agent
 
-A plug-and-play **prompt + instruction kit** transforming **Anthropic Claude Code** into an automated, multi-step, citation-rich deep research assistant. Powered by the *Graph-of-Thoughts* framework and custom prompt-engineering workflows.
-
-> **TL;DR:** Use ChatGPT (with `Deep Research Question Generator System Prompt.md`) to refine your question. Start Claude Code (model: `opus`), load `CLAUDE.md`, and paste your refined question. Claude autonomously researches, verifies, and delivers a fully cited Markdown report.
-
----
 
 ## Table of Contents
 
