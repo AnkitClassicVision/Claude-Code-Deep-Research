@@ -30,9 +30,9 @@ Large Language Models (LLMs) excel at single queries but struggle with complex, 
 
 ## Quick Start
 
-### Step 1: Refine Your Question with ChatGPT
+### Step 1: Refine Your Question with ChatGPT (or your favorite LLM)
 
-1. Open ChatGPT (model o3 or o3-pro).
+1. Open ChatGPT (model o3/o3-pro or other thinking models work best).
 2. Set the **system prompt** to the contents of `Deep Research Question Generator System Prompt.md`.
 3. Paste your raw research question into the **user prompt**.
 4. Respond to any clarifying questions from ChatGPT.
