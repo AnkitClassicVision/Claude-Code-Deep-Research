@@ -1,5 +1,5 @@
 # Claude Deep Research Agent
-
+#See example outputs here: https://claude-code-deep-research.vercel.app/
 
 ## Table of Contents
 
@@ -26,9 +26,11 @@ Large Language Models (LLMs) excel at single queries but struggle with complex, 
 | **Deep Research Question Generator System Prompt.md** | ChatGPT system prompt (o3/o3-pro) refining raw questions into structured prompts (OpenAI format recommended). |
 | **deepresearchprocess.md**                            | Comprehensive 7-phase deep research playbook inspired by OpenAI & Google Gemini, foundational to `CLAUDE.md`. |
 | **.template\_mcp.json**                               | Optional MCP server configuration for local filesystem and browser automation with Claude.                    |
-| `examples/`                                           | Sample refined questions and completed Claude reports (coming soon).                                          |
+| `examples/`                                           | Sample refined questions and completed Claude reports compared to other outputs.                              |
 
 ## Quick Start
+
+##Example output and comparisons (from examples folder): https://claude-code-deep-research.vercel.app/
 
 ### Step 1: Refine Your Question with ChatGPT (or your favorite LLM)
 
