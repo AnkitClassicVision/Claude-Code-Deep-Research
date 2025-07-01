@@ -1,5 +1,5 @@
 # Claude Deep Research Agent
-#See example outputs here: https://claude-code-deep-research.vercel.app/
+See example outputs here: https://claude-code-deep-research.vercel.app/
 
 ## Table of Contents
 
@@ -14,6 +14,7 @@
 
 ---
 
+UPDATE: Added Calude2.md - updated for deeper reserach and more closley mimics graph of thought patterns.
 ## Why This Exists
 
 Large Language Models (LLMs) excel at single queries but struggle with complex, multi-step research requiring iterative querying, source verification, and citations—what OpenAI and Google call "Deep Research." Anthropic’s Claude Code can achieve the same results, provided the right instructions. This repo supplies those instructions, streamlined into an easy-to-use workflow.
