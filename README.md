@@ -5,22 +5,25 @@ See example outputs here: https://claude-code-deep-research.vercel.app/
 
 1. [Why This Exists](#why-this-exists)
 2. [Repo Structure](#repo-structure)
-3. [Quick Start](#quick-start)
-4. [How It Works](#how-it-works)
-5. [Customization](#customization)
-6. [Roadmap](#roadmap)
+3. [Version 4.0](#version-40-june-2026)
+4. [Quick Start](#quick-start)
+5. [How It Works](#how-it-works)
+6. [Customization](#customization)
 7. [Credits & Acknowledgements](#credits--acknowledgements)
 8. [License](#license)
 
 ---
 
-UPDATE: Added Calude2.md - updated for deeper reserach and more closley mimics graph of thought patterns.
+UPDATE: Added `Claude2.md` — updated for deeper research and closer Graph-of-Thought patterns.
 
 ## Version 4.0 (June 2026)
 V4 replaces thinking scaffolds with verification scaffolds: deterministic stop rules
 and citation gates (scripts), cross-model verification, consequence-tier confidence
 floors, run cards, and signed residue statements. See `Version4/README.md`.
 V3 remains unchanged below for existing users.
+
+**Recommended default for new research:** start with V4. Use V3 only when you need
+the original public Graph-of-Thoughts workflow or are comparing V3 against V4.
 
 ## Why This Exists
 
@@ -35,10 +38,22 @@ Large Language Models (LLMs) excel at single queries but struggle with complex, 
 | **deepresearchprocess.md**                            | Comprehensive 7-phase deep research playbook inspired by OpenAI & Google Gemini, foundational to `CLAUDE.md`. |
 | **.template\_mcp.json**                               | Optional MCP server configuration for local filesystem and browser automation with Claude.                    |
 | `examples/`                                           | Sample refined questions and completed Claude reports compared to other outputs.                              |
+| `Version4/`                                           | Current verification-gated workflow: control file, installable agents, scripts, schemas, prompt refiner, skill wrapper, benchmark artifacts, and deployment reports. |
+| `AGENTS.md` / `GEMINI.md`                             | Pointers for Codex/Gemini-style surfaces to read `Version4/skills/deep-research/SKILL.md` and follow the V4 control logic. |
 
 ## Quick Start
 
-##Example output and comparisons (from examples folder): https://claude-code-deep-research.vercel.app/
+### Recommended: Version 4.0 verification-gated workflow
+
+1. Read `Version4/README.md` for the V3 → V4 changes.
+2. Use `Version4/CLAUDE.md` as the controller and `Version4/agents/*.md` for the six research roles.
+3. Keep `Version4/scripts/` and `Version4/schemas/` with the run so `stop_rule.py`, `citation_audit.py`, run cards, ledgers, and residue statements are available.
+4. Start with: `Deep research [your question]`.
+5. Before finalizing, run the deterministic gates and record any unresolved claims in the residue statement.
+
+### Legacy V3 workflow
+
+Example output and comparisons from the examples folder: https://claude-code-deep-research.vercel.app/
 
 ### Step 1: Refine Your Question with ChatGPT (or your favorite LLM)
 
@@ -66,7 +81,7 @@ Large Language Models (LLMs) excel at single queries but struggle with complex, 
 2. Claude autonomously performs:
 
    * Research planning with Graph-of-Thoughts.
-   * Spins up mulple subagents to do the work faster
+   * Spins up multiple subagents to do the work faster
    * Iterative search and data scraping.
    * Fact verification and cross-referencing.
    * Markdown report generation with citations and bibliography.
@@ -86,9 +101,10 @@ After obtaining the report, instruct Claude to convert it into a user-friendly w
 ### Workflow Overview
 
 ```
-[ ChatGPT (o3) ] → Question Refinement → [ Claude Code (opus) ] → Graph-of-Thoughts & Deep Research Pipeline → [ Cited Markdown Report ]
+[ Question Refinement ] → [ Claude Code / agent surface ] → [ V4 verification-gated research pipeline ] → [ Cited Markdown Report + Evidence Ledger + Run Card + Residue ]
 ```
 
+* **Version4:** Current workflow. It uses branch quotas, disjointness checks, deterministic stop rules, citation audits, cross-model verification, consequence-tier confidence floors, run cards, and signed residue statements.
 * **DeepResearchProcess:** Implements a 7-phase pipeline—Scope → Plan → Retrieve → Triangulate → Draft → Critique → Package.
 * **Graph-of-Thoughts:** Allows Claude to branch and merge multiple reasoning paths rather than relying on linear chains.
 * **CLAUDE.md:** Integrates instructions, enabling Claude to autonomously select tools, verify information, and embed citations systematically.
