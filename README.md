@@ -15,6 +15,13 @@ See example outputs here: https://claude-code-deep-research.vercel.app/
 ---
 
 UPDATE: Added Calude2.md - updated for deeper reserach and more closley mimics graph of thought patterns.
+
+## Version 4.0 (June 2026)
+V4 replaces thinking scaffolds with verification scaffolds: deterministic stop rules
+and citation gates (scripts), cross-model verification, consequence-tier confidence
+floors, run cards, and signed residue statements. See `Version4/README.md`.
+V3 remains unchanged below for existing users.
+
 ## Why This Exists
 
 Large Language Models (LLMs) excel at single queries but struggle with complex, multi-step research requiring iterative querying, source verification, and citations—what OpenAI and Google call "Deep Research." Anthropic’s Claude Code can achieve the same results, provided the right instructions. This repo supplies those instructions, streamlined into an easy-to-use workflow.
