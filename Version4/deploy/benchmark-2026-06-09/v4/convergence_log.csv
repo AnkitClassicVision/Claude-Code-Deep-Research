@@ -1,0 +1,3 @@
+checkpoint,new_claim_rate,new_source_rate,answer_flips_window,decision_claims_total,decision_claims_at_floor,open_decision_contradictions
+1,0.4,0.7,0,1,1,0
+2,0.04,0.05,0,1,1,0
