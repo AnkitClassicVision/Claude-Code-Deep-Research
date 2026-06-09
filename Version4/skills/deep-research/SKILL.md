@@ -1,6 +1,14 @@
 ---
 name: deep-research
-description: Gate-driven deep research pipeline (V4). Use this skill whenever the user asks for deep research, a research report, due diligence, a literature review, a competitive or market landscape, a technology evaluation, "compare X vs Y with sources", "what does the evidence say about", or any question where the answer will drive a decision and needs citations. Trigger even if the user does not say "research": multi-source questions with money, strategy, or safety on the line belong here. Do NOT trigger for single-fact lookups or questions answerable from one source.
+description: >
+  Gate-driven deep research pipeline (V4). Use this skill whenever the user asks
+  for deep research, a research report, due diligence, a literature review, a
+  competitive or market landscape, a technology evaluation, "compare X vs Y with
+  sources", "what does the evidence say about", or any question where the answer
+  will drive a decision and needs citations. Trigger even if the user does not
+  say "research": multi-source questions with money, strategy, or safety on the
+  line belong here. Do NOT trigger for single-fact lookups or questions
+  answerable from one source.
 ---
 
 # Deep Research V4 (Skill)

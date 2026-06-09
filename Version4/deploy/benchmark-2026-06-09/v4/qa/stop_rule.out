@@ -1,0 +1,8 @@
+exit_code=1
+VERDICT: STOP_SUFFICIENT
+  gate_coverage: 100% (1/1 decision claims at floor)
+  open_decision_contradictions: 0
+  low_yield over last 2 checkpoint(s): False
+  answer_flips in window: 0
+  mode: explore
+  action: All decision claims at floor, zero open decision contradictions. Do not gold-plate.
